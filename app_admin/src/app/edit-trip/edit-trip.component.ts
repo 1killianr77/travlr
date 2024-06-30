@@ -80,7 +80,7 @@ export class EditTripComponent implements OnInit{
         .subscribe({  
           next: (value: any) => {  
             console.log(value);  
-            this.router.navigate(['']);  
+            this.router.navigate(['list-trips']);  
           },  
           error: (error: any) => {  
             console.log('Error: ' + error);  
@@ -90,5 +90,5 @@ export class EditTripComponent implements OnInit{
     }
     
     // get the form short name to access the form fields  
-    get f() { return this.editForm.controls; }   
+    get f() { return this.editForm.controls; }  
 }
